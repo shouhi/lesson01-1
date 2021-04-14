@@ -8,7 +8,9 @@ const array = [];
 for (let i = 0; i < students.length; i++) {
   const num = Math.floor(students[i] / 10) * 10;
   //同じ値が出てきたときにカウントされていくようにする
+  console.log(result[num]);
   if (result[num] === undefined) {
+    // console.log(result);
     result[num] = 0;
   }
   result[num]++;

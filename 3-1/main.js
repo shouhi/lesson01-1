@@ -65,40 +65,43 @@ A, データを保存しておくための箱。
       console.log(prof[1]) ,,, Tech.Uni
 */
 
-// ①配列を9用意する
-for (let i = 1; i < 10; i++) {
-  const row = [];
-  // for (let a = 1; a < 10; a++) {
-  //   row.push(i * a);
-  // }
-  // console.log(row.join("\t"));
-  // console.log(row);
-}
+// // ①配列を9用意する
+// for (let i = 1; i < 10; i++) {
+//   const row = [];
+//   row.push(i);
+//   // for (let a = 1; a < 10; a++) {
+//   //   row.push(i * a);
+//   // }
+//   // console.log(row.join("\t"));
+//   // console.log(row);
+// }
 
-// ②9個の配列に数字を入れる
-for (let i = 1; i < 10; i++) {
-  const row2 = [];
-  row2.push(i);
-  // console.log(row2);
-}
+// // ②9個の配列に数字を入れる
+// for (let i = 1; i < 10; i++) {
+//   const row2 = [];
+//   row2.push(i);
+//   // console.log(row2);
+// }
 
-// ③掛け算のプログラムを組んでいく
-for (let i = 1; i < 10; i++) {
-  const row3 = [];
-  for (let j = 1; j < 10; j++) {
-    row3.push(i * j);
-  }
-  // console.log(row3);
-}
+// // ③掛け算のプログラムを組んでいく
+// for (let i = 1; i < 10; i++) {
+//   console.log(i);
+//   const row3 = [];
+//   for (let j = 1; j < 10; j++) {
+//     // console.log(j);
+//     row3.push(i * j);
+//   }
+//   // console.log(row3);
+// }
 
-// ④九九表っぽく表示する
-for (let i = 1; i < 10; i++) {
-  const row4 = [];
-  for (let j = 1; j < 10; j++) {
-    row4.push(i * j);
-  }
-  // console.log(row4.join("\t"));
-}
+// // ④九九表っぽく表示する
+// for (let i = 1; i < 10; i++) {
+//   const row4 = [];
+//   for (let j = 1; j < 10; j++) {
+//     row4.push(i * j);
+//   }
+//   console.log(row4.join("\t"));
+// }
 
 for (let i = 1; i < 10; i++) {
   let arr = "";

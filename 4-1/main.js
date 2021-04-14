@@ -23,3 +23,22 @@ if (array.length % 2 === 1) {
 } else {
   console.log((array[num] + array[num - 1]) / 2);
 }
+
+// let args = process.argv.slice(2);
+let args = process.argv;
+const test = args.shift();
+console.log(args);
+console.log(test);
+//コマンドライン引数の先頭から要素を２つ削除したい
+//数値化して並び替え
+// const nums = args.map(Number).sort();
+// console.log(`sort:${nums}`);
+// target = Math.floor(nums.length / 2);
+
+// if (nums.length % 2 === 1) {
+//   console.log(nums);
+//   console.log(nums[target]);
+// } else {
+//   console.log(nums);
+//   console.log((nums[target] + nums[target - 1]) / 2);
+// }
