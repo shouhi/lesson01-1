@@ -25,10 +25,6 @@ if (array.length % 2 === 1) {
 }
 
 // let args = process.argv.slice(2);
-let args = process.argv;
-const test = args.shift();
-console.log(args);
-console.log(test);
 //コマンドライン引数の先頭から要素を２つ削除したい
 //数値化して並び替え
 // const nums = args.map(Number).sort();
@@ -42,3 +38,15 @@ console.log(test);
 //   console.log(nums);
 //   console.log((nums[target] + nums[target - 1]) / 2);
 // }
+
+let args = [
+  Number(process.argv["2"]),
+  Number(process.argv["3"]),
+  Number(process.argv["4"]),
+  Number(process.argv["5"]),
+  Number(process.argv["6"]),
+];
+
+args.sort((a, b) => a - b);
+
+console.log(args[2]);
