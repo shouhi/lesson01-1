@@ -41,3 +41,37 @@ for (let i = 0; i < max; i++) {
   console.log(ans.join("  "));
 }
 console.log(10, 20, 30, 40, 50, 60, 70, 80, 90, 100);
+
+// const students = [17, 38, 100, 95, 23, 62, 77, 45, 69, 81, 83, 51, 42, 36, 60];
+// const width = 10;
+// var max_s = Math.max(...students);
+// var ls_len = students.length;
+// const floors = parseInt(max_s / width, 10);
+// //グラフ化
+// var data = Array(floors).fill(0);
+// var result = [];
+// var num;
+// const base = Array(floors).fill(" ");
+// console.log(floors);
+// var max_d = 0;
+// for (var i = 0; i < ls_len; i++) {
+//   num = parseInt(students[i] / width, 10) - 1;
+//   data[num] += 1;
+//   if (data[num] > max_d) {
+//     // result.unshift(Array(floors).fill(" "));
+//     result.unshift([...base]); //=>うまくいかない why?
+//     max_d += 1;
+//   }
+//   result[max_d - data[num]][num] = "*";
+// }
+// //出力
+// for (var i = 0; i < max_d; i++) {
+//   console.log("  " + result[i].join("  "));
+// }
+// console.log("-".repeat(3 * floors));
+// console.log(
+//   Array(floors + 1)
+//     .fill(" ")
+//     .map((x, y) => width * y)
+//     .join(" ")
+// );
