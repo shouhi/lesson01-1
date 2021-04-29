@@ -41,23 +41,49 @@
 //   console.log(word);
 // }
 
-const arg1 = process.argv[2];
-const arg2 = process.argv[3];
-const mark = "*";
-const dash = "-";
+// const arg1 = process.argv[2];
+// const arg2 = process.argv[3];
+// const mark = "*";
+// const dash = "-";
 
-for (let i = 0; i < arg1; i++) {
-  let arr = [];
-  if (i % 2 == 0) {
-    for (let j = 0; j < arg2; j++) {
-      let odd = j % 2 == 1 ? dash : mark;
-      arr.push(odd);
+// for (let i = 0; i < arg1; i++) {
+//   let arr = [];
+//   if (i % 2 == 0) {
+//     for (let j = 0; j < arg2; j++) {
+//       let odd = j % 2 == 1 ? dash : mark;
+//       arr.push(odd);
+//     }
+//   } else {
+//     for (let j = 0; j < arg2; j++) {
+//       let even = j % 2 == 1 ? mark : dash;
+//       arr.push(even);
+//     }
+//   }
+//   console.log(arr.join(""));
+// }
+
+// **コマンドライン引数の1つ目を縦、2つ目を横の数とし"\*-"が連続した四角形を作る。
+// ルール：奇数行は、"\*"から始まるが、偶数行は"-"から始める。**
+const a = Number(process.argv[2]);
+const b = Number(process.argv[3]);
+for (let n = 1; n <= a; n++) {
+  let wei = "";
+  if (n % 2 == 0) {
+    for (let m = 1; m <= b; m++) {
+      if (m % 2 == 0) {
+        wei += "*";
+      } else {
+        wei += "-";
+      }
     }
   } else {
-    for (let j = 0; j < arg2; j++) {
-      let even = j % 2 == 1 ? mark : dash;
-      arr.push(even);
+    for (let m = 1; m <= b; m++) {
+      if (m % 2 == 0) {
+        wei += "-";
+      } else {
+        wei += "*";
+      }
     }
   }
-  console.log(arr.join(""));
+  console.log(wei);
 }

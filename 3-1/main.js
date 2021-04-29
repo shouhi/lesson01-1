@@ -103,12 +103,12 @@ A, データを保存しておくための箱。
 //   console.log(row4.join("\t"));
 // }
 
-for (let i = 1; i < 10; i++) {
-  let arr = "";
-  for (let j = 1; j < 10; j++) {
-    let n = i * j;
-    arr += n;
-    arr += " ";
-  }
-  console.log(arr);
-}
+// for (let i = 1; i < 10; i++) {
+//   let arr = "";
+//   for (let j = 1; j < 10; j++) {
+//     let n = i * j;
+//     arr += n;
+//     arr += " ";
+//   }
+//   console.log(arr);
+// }
