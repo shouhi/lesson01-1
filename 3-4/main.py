@@ -43,3 +43,48 @@ def main():
 
 if __name__ == '__main__':
     main() 
+
+
+
+
+
+
+
+a ,b= map(int,input().split())
+c = []
+d = []
+a = abs(a)
+a_str = str(a)
+a_len = len(a_str)
+b_len = len(str(abs(b)))
+a = int(a)
+b = int(b)
+e = a
+f = b
+for i in reversed(range(a_len)):
+    c.append(e//pow(10,i))
+    e = a%pow(10,i)
+
+for i in reversed(range(b_len)):
+    d.append(f//pow(10,i))
+    f= b%pow(10,i)
+
+c.reverse()
+d.reverse()
+z = len(c)
+y = len(d)
+
+g =0
+v =0
+
+for i in range(len(c)):
+
+    g += c[i]*pow(10,z-1)
+    z -= 1
+
+for i in range(len(d)):
+    v += d[i]*pow(10,y-1)
+    y -= 1
+
+sum = g+v
+print(sum)

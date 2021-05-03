@@ -85,11 +85,11 @@ A, データを保存しておくための箱。
 
 // // ③掛け算のプログラムを組んでいく
 // for (let i = 1; i < 10; i++) {
-//   console.log(i);
+//   // console.log(i);
 //   const row3 = [];
 //   for (let j = 1; j < 10; j++) {
-//     // console.log(j);
-//     row3.push(i * j);
+//     console.log(j);
+//     // row3.push(i * j);
 //   }
 //   // console.log(row3);
 // }
@@ -106,9 +106,14 @@ A, データを保存しておくための箱。
 // for (let i = 1; i < 10; i++) {
 //   let arr = "";
 //   for (let j = 1; j < 10; j++) {
-//     let n = i * j;
-//     arr += n;
+//     arr += i * j;
 //     arr += " ";
 //   }
 //   console.log(arr);
 // }
+
+let n = "";
+for (let i = 0; i < 5; i++) {
+  n += i;
+}
+console.log(n);
