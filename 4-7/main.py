@@ -27,18 +27,33 @@
 # if __name__ == '__main__':
 #     main()
 
-a , b = map(str,input().split())
-c = a.split(",")
-d = []
-for i in range(len(c)):
-    d.append(c[i].lower())
-e =len(d)
-f =[]
-for i in range(e):
-    co = d[i].count(b)
-    if co > 0:
-        f.append(d[i])
-    else:
-        continue
-f_sorted = sorted(f)
-print(*f_sorted)
+# a , b = map(str,input().split())
+# c = a.split(",")
+# d = []
+# for i in range(len(c)):
+#     d.append(c[i].lower())
+# e =len(d)
+# f =[]
+# for i in range(e):
+#     co = d[i].count(b)
+#     if co > 0:
+#         f.append(d[i])
+#     else:
+#         continue
+# f_sorted = sorted(f)
+# print(*f_sorted)
+
+
+import requests
+from bs4 import BeautifulSoup
+import re
+
+url = 'https://www.yahoo.co.jp/'
+res = requests.get( url )
+soup = BeautifulSoup( res.text, 'html.parser' )
+
+elements = soup.find_all( href = re.compile( 'news.yahoo.co.jp/pickup' ) )
+for element in elements:
+    text = element.getText()
+    link = element.attrs['href']
+    print( "'{}','{}'".format( text, link ) )
